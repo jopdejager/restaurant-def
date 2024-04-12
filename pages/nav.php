@@ -3,7 +3,7 @@
               <div class="col-30">
                      <div class="logo-vak">
                      <div class="row justify-around">
-                         <img class="logo"  src="../foto/bowl.png" alt="">
+                            <a href="/index.php"><img class="logo"  src="../foto/bowl.png" alt=""></a>
                      </div>
                   </div>
               </div>
@@ -12,9 +12,9 @@
               </div>
               <div class="col-30">
               <div class="row text-gap">
-                     <a>menu</a>
+                     <a class="nav-a" href="/pages/menu.php">menu</a>
                      <a>bezrogen & afhalen</a>
-                     <a href="pages/login.php">inlog</a>
+                     <a  class="nav-a" href="/pages/login.php">inlog</a>
                      </div>
               </div>
         </div>

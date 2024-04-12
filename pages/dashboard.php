@@ -1,4 +1,5 @@
 <?php
+include("conn.php");
     session_start();
        if (!isset($_SESSION["user"])) {
        header("Location: login.php");
@@ -35,5 +36,15 @@
                 <input type="submit" value='Maak product' class="button-produtcs"/>
             </div>
         </div>
+        <?php 
+    $stmt = $connection->prepare("SELECT * FROM products");
+    $stmt->execute();
+    $data = $stmt->fetchALL();
+
+    foreach ($data as $row) {
+        echo $row['naam'];
+        echo "<a href='product_update.php?id=".$row['id']."'>Update</a>";
+    }
+    ?>
    </div>
 </body>

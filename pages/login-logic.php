@@ -9,7 +9,6 @@
     $username =  $_POST["username"];
     $password =  $_POST["password"];
 
-    // $postcode =  $_POST["postcode"];
 
     $stmt = $connection-> prepare("SELECT * FROM users WHERE username=:user AND password=:pass");
     $stmt->execute(['user' => $username,'pass' => $password]);

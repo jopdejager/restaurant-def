@@ -1,19 +1,8 @@
-<!-- <?php
+<?php
     include 'pages/conn.php';
 
-    $stmt = $connection->query("SELECT * FROM products WHERE id = 1");
-    $user = $stmt->fetch();
-    // echo $user["naam"];
-    // echo $user['omschrijving'] ;
-    // echo $user['prijs'] ;
 
-    $stmt = $connection->query("SELECT * FROM products");
-    while ($row = $stmt->fetch()) {
-    echo $row['naam'] ."<br />\n";
-    echo $row['omschrijving'] ."<br />\n";
-    echo $row['prijs'] ."<br />\n";
-    }
- ?> -->
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
